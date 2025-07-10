@@ -14,6 +14,9 @@ module.exports = {
         secondary:{
           DEFAULT: '#545158',
         },
+        body:{
+          DEFAULT: '#F8F9FD',
+        },
         fontFamily: {
         inter: ['Inter', 'sans-serif'],
       },
