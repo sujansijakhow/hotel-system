@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, Minus } from 'lucide-react';
 import { FaGlobe, FaBell } from 'react-icons/fa';
+import Button from './Button';
 
 const Navbar = () => {
     return (
@@ -27,9 +28,9 @@ const Navbar = () => {
                         <X size={18} className='font-bold' />
                     </button>
                 </div>
-                <div className='flex justify-between items-center ml-10'>
+                <div className='flex justify-between items-center px-8 text-gray-500'>
                     <div className="h-8 w-60 bg-white drop-shadow-xl rounded-md flex justify-between pr-2 items-center focus-within:outline focus-within:outline-1 focus-within:outline-gray-400">
-                        <input type="text" className="outline-none h-8 pl-2 w-full bg-transparent text-gray-200 font-normal text-[13px]" placeholder='Search...' />
+                        <input type="text" className="outline-none h-8 pl-2 w-full bg-transparent text-gray-900 font-normal text-[13px]" placeholder='Search...' />
                         <span className='cursor-pointer'>🔍</span>
                     </div>
 
@@ -40,7 +41,7 @@ const Navbar = () => {
                         </div>
                         <div className='flex items-center gap-2'>
                             <FaBell size={17} className='text-yellow-400 outline-1 outline-1-black' />
-                            <button className='bg-primary rounded-md w-20 font-medium text-white text-[14px] border p-1'>Login</button>
+                            <Button width={20} name={"login"} />
                         </div>
                     </div>
 
