@@ -1,16 +1,16 @@
-import React from 'react'
-
 const Button = ({
-    name,
-    height,
-    width,
+  name,
+  height = 40,
+  width = 120,
 }) => {
-    return (
-        <div>
-            <button className={`bg-primary rounded-md w-${width} font-medium text-white text-[14px] border p-1`}>{name}</button>
+  return (
+    <button
+      style={{ height: `${height}px`, width: `${width}px` }}
+      className="bg-primary rounded-md font-medium text-white text-[14px] border p-1"
+    >
+      {name}
+    </button>
+  );
+};
 
-        </div>
-    )
-}
-
-export default Button
+export default Button;      
