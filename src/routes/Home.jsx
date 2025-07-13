@@ -3,6 +3,7 @@ import Sidebar from '../components/Sidebar'
 import Navbar from '../components/Navbar'
 import Button from '../components/Button'
 import Facility from '../components/Facility'
+import Tooltip from '../components/Tooltip'
 
 const Home = () => {
     return (
@@ -28,16 +29,16 @@ const Home = () => {
                             </div>
                             
                             <div className='flex flex-col gap-2'>
-                                <span className='text-slate-600'>Destination</span>
+                                <span className='text-slate-600'>Date</span>
                                 <input
                                     type="date" placeholder='Where are you going?'
-                                    className="w-56 p-2 text-[13px] text-slate-900 border border-gray-300 placeholder:text-[13px] placeholder:text-slate-700 focus:outline focus:outline-none rounded-md"
+                                    className="w-56 p-2 cursor-pointer text-[13px] text-slate-900 border border-gray-300 placeholder:text-[13px] placeholder:text-slate-700 focus:outline focus:outline-none rounded-md"
                                 />
 
                             </div>
                             <div className='flex flex-col gap-2'>
-                                <span className='text-slate-600'>Destination</span>
-                                <select name="" id="" className='w-56 p-2 text-[13px] text-slate-900 border border-gray-300 placeholder:text-[13px] placeholder:text-slate-700 focus:outline focus:outline-none rounded-md'>
+                                <span className='text-slate-600'>Room Type</span>
+                                <select name="" id="" className='w-56 p-2 cursor-pointer text-[13px] text-slate-900 border border-gray-300 placeholder:text-[13px] placeholder:text-slate-700 focus:outline focus:outline-none rounded-md'>
                                     <option value="">Standard</option>
                                     <option value="">Deluxe</option>
                                     <option value="">Single</option>
@@ -62,10 +63,12 @@ const Home = () => {
                             <div className='bg-body/40 bg rounded-md border border-gray-300 opacity- w-72 h-38 flex flex-col gap-2 p-2 px-3'>
                                 <div className='flex items-center justify-between'>
                                     <span className='text-[13px] text-black font-medium'>Golden Haven Hotel</span>
-                                    <div className='h-[15px] w-10 bg-gray-700 rounded-sm flex items-center p-1 justify-between'>
-                                        <span className='text-white text-[8px] font-semibold'>4.8</span>
-                                        <span className='text-[8px]'>⭐</span>
-                                    </div>
+                                    <Tooltip text={"Rating"}>
+                                        <div className='h-[15px] w-10 bg-gray-700 rounded-sm flex items-center p-1 justify-between cursor-pointer'>
+                                            <span className='text-white text-[8px] font-semibold'>4.8</span>
+                                            <span className='text-[8px]'>⭐</span>
+                                        </div>
+                                    </Tooltip>
                                 </div>
                                 <div className='flex items-center gap-1'>
                                     <span className='text-[10px]'>
@@ -84,7 +87,9 @@ const Home = () => {
                                         <span className='text-primary font-semibold'>$200</span>
                                         <span className='text-gray-500 text-[10px]'>Per Night</span>
                                     </div>
-                                    <Button name={"View Details"} height={34} />
+                                    <Tooltip text={"Click to View Details"}>
+                                        <Button name={"View Details"} height={34} />
+                                    </Tooltip>
                                 </div>
                             </div>
 
@@ -92,10 +97,12 @@ const Home = () => {
                             <div className='bg-body/40 bg rounded-md border border-gray-300 opacity- w-72 h-38 flex flex-col gap-2 p-2 px-3'>
                                 <div className='flex items-center justify-between'>
                                     <span className='text-[13px] text-black font-medium'>Luxury Stay</span>
-                                    <div className='h-[15px] w-10 bg-gray-700 rounded-sm flex items-center p-1 justify-between'>
-                                        <span className='text-white text-[8px] font-semibold'>4.7</span>
-                                        <span className='text-[8px]'>⭐</span>
-                                    </div>
+                                    <Tooltip text={"Rating"}>
+                                        <div className='h-[15px] w-10 bg-gray-700 rounded-sm flex items-center p-1 justify-between cursor-pointer'>
+                                            <span className='text-white text-[8px] font-semibold'>4.7</span>
+                                            <span className='text-[8px]'>⭐</span>
+                                        </div>
+                                    </Tooltip>
                                 </div>
                                 <div className='flex items-center gap-1'>
                                     <span className='text-[10px]'>
@@ -114,7 +121,9 @@ const Home = () => {
                                         <span className='text-primary font-semibold'>$180</span>
                                         <span className='text-gray-500 text-[10px]'>Per Night</span>
                                     </div>
-                                    <Button name={"View Details"} height={34} />
+                                    <Tooltip text={"Click to View Details"}>
+                                        <Button name={"View Details"} height={34} />
+                                    </Tooltip>
                                 </div>
                             </div>
 
@@ -123,10 +132,12 @@ const Home = () => {
                             <div className='bg-body/40 bg rounded-md border border-gray-300 opacity- w-72 h-38 flex flex-col gap-2 p-2 px-3'>
                                 <div className='flex items-center justify-between'>
                                     <span className='text-[13px] text-black font-medium'>Resort & Spa</span>
-                                    <div className='h-[15px] w-10 bg-gray-700 rounded-sm flex items-center p-1 justify-between'>
-                                        <span className='text-white text-[8px] font-semibold'>4.9</span>
-                                        <span className='text-[8px]'>⭐</span>
-                                    </div>
+                                    <Tooltip text={"Rating"}>
+                                        <div className='h-[15px] w-10 bg-gray-700 rounded-sm flex items-center p-1 justify-between cursor-pointer'>
+                                            <span className='text-white text-[8px] font-semibold'>4.9</span>
+                                            <span className='text-[8px]'>⭐</span>
+                                        </div>
+                                    </Tooltip>
                                 </div>
                                 <div className='flex items-center gap-1'>
                                     <span className='text-[10px]'>
@@ -145,7 +156,9 @@ const Home = () => {
                                         <span className='text-primary font-semibold'>$250</span>
                                         <span className='text-gray-500 text-[10px]'>Per Night</span>
                                     </div>
-                                    <Button name={"View Details"} height={34} />
+                                    <Tooltip text={"Click to View Details"}>
+                                        <Button name={"View Details"} height={34} />
+                                    </Tooltip>
                                 </div>
                             </div>
                         </div>
