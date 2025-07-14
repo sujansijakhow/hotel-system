@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Button from '../components/Button'
 import Facility from '../components/Facility'
 import Tooltip from '../components/Tooltip'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -88,7 +89,7 @@ const Home = () => {
                                         <span className='text-gray-500 text-[10px]'>Per Night</span>
                                     </div>
                                     <Tooltip text={"Click to View Details"}>
-                                        <Button name={"View Details"} height={34} />
+                                        <Button name={"View Details"} height={34} to={"/viewdetailone"} />
                                     </Tooltip>
                                 </div>
                             </div>
