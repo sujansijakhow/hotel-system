@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./routes/Home";
+import ViewDetailOne from "./routes/ViewDetailOne";
 
 function App() {
 
@@ -9,6 +10,10 @@ function App() {
     {
       path: "/",
       element: <Home />
+    },
+    {
+      path: "/viewdetailone",
+      element: <ViewDetailOne />
     }
   ])
 
