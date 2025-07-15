@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./routes/Home";
 import ViewDetailOne from "./routes/ViewDetailOne";
+import Availability from "./routes/Availability";
 
 function App() {
 
@@ -14,6 +15,10 @@ function App() {
     {
       path: "/viewdetailone",
       element: <ViewDetailOne />
+    },
+    {
+      path: "/availability",
+      element: <Availability />
     }
   ])
 
