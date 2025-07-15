@@ -60,7 +60,8 @@ const ViewDetailOne = () => {
                                     <span className='text-gray-500 text-[10px]'>Per Night</span>
 
                                 </div>
-                                <Button name={"Check Availability"} width={180} />
+                                
+                                    <Button name={"Check Availability"} width={180} to={"/availability"} />
                             </div>
                         </div>
 
