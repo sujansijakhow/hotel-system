@@ -56,7 +56,7 @@ const Availability = () => {
 
                             </div>
                             <Tooltip text={"Click to Book"}>
-                                <Button name={"Book Room"} width={180} to={"/availability"} />
+                                <Button name={"Book Room"} width={180} to={"/booking"} />
 
                             </Tooltip>
                         </div>
