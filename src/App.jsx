@@ -4,6 +4,7 @@ import Sidebar from "./components/Sidebar";
 import Home from "./routes/Home";
 import ViewDetailOne from "./routes/ViewDetailOne";
 import Availability from "./routes/Availability";
+import Booking from "./routes/Booking";
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
     {
       path: "/availability",
       element: <Availability />
+    }, {
+      path: "/booking",
+      element: <Booking />
     }
   ])
 
