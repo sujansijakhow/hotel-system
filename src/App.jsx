@@ -5,6 +5,7 @@ import Home from "./routes/Home";
 import ViewDetailOne from "./routes/ViewDetailOne";
 import Availability from "./routes/Availability";
 import Booking from "./routes/Booking";
+import MyBooking from "./routes/MyBooking";
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
     }, {
       path: "/booking",
       element: <Booking />
+    },
+    {
+      path: "/mybooking",
+      element: <MyBooking />
     }
   ])
 
