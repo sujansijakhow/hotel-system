@@ -48,15 +48,12 @@ const MyBooking = () => {
                             </div>
 
                             <div className='bg-body drop-shadow-sm w-[25%] rounded-tr-md rounded-br-md p-7 flex flex-col justify-center gap-2'>
-                                <div className='flex gap-2 items-center justify-center'>
-                                    <span className='text-primary font-semibold text-sm'>$220</span>
-                                    <span className='text-gray-500 text-[10px]'>Per Night</span>
-
+                                <div className='flex flex-col gap-2 items-end'>
+                                    <button className='px-2 py-1 bg-green-200 text-green-800 text-[12px] rounded-md w-[70%]'>Confirmed</button>
+                                    <button className='px-2 py-1 bg-primary text-white text-[12px] rounded-md w-full'>Modify</button>
+                                    <button className='px-2 py-1 bg-red-200 text-red-800 text-[12px] rounded-md w-full'>Canced</button>
+                                    <button className='px-2 py-1 bg-transparent text-[12px] border border-primary rounded-md w-full'>Download Eticket</button>
                                 </div>
-                                <Tooltip text={"Click to Book"}>
-                                    <Button name={"Book Room"} width={180} to={"/booking"} />
-
-                                </Tooltip>
                             </div>
                         </div>
                     </div>
