@@ -4,7 +4,8 @@ const Button = ({
   name,
   height = 40,
   width = 120,
-  to
+  to,
+  text = 14
 }) => {
   return (
     <Link to={to}>
